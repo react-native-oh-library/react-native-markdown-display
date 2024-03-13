@@ -1,0 +1,1 @@
+{"version":3,"names":["uuid","Date","getTime","getUniqueID","toString"],"sourceRoot":"..\\..\\..\\..\\src","sources":["lib/util/getUniqueID.js"],"mappings":";;;;;;AAAA,IAAIA,IAAI,GAAG,IAAIC,IAAI,CAAC,CAAC,CAACC,OAAO,CAAC,CAAC;AAEhB,SAASC,WAAWA,CAAA,EAAG;EACpCH,IAAI,EAAE;EACN,OAAQ,QAAOA,IAAI,CAACI,QAAQ,CAAC,EAAE,CAAE,EAAC;AACpC","ignoreList":[]}

@@ -1,0 +1,1 @@
+{"version":3,"names":["MarkdownIt","renderRules","undefined","AstRenderer","Markdown"],"sourceRoot":"..\\..\\src","sources":["index.d.ts"],"mappings":"AAAA;AACA,OAAOA,UAAU,MAAM,aAAa;AA4CpC,OAAO,MAAMC,WAAwB,GAAGC,SAAS;AAkBjD,OAAO,MAAMC,WAAW,CAAC;AA+BzB,OAAO,MAAMC,QAAwB,GAAIF,SAAS;AAElD,SAAQF,UAAU;AAClB,eAAeI,QAAQ","ignoreList":[]}

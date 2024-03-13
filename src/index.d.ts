@@ -43,7 +43,7 @@ export interface RenderRules {
   image?: RenderImageFunction;
 }
 
-export const renderRules: RenderRules;
+export const renderRules: RenderRules = undefined;
 
 export interface MarkdownParser {
   parse: (value: string, options: any) => Token[];
@@ -92,7 +92,7 @@ export interface MarkdownProps {
 }
 
 type MarkdownStatic = ComponentType<PropsWithChildren<MarkdownProps>>;
-export const Markdown: MarkdownStatic;
+export const Markdown: MarkdownStatic  = undefined;
 export type Markdown = MarkdownStatic;
 export {MarkdownIt};
 export default Markdown;

@@ -300,11 +300,30 @@ const renderRules = {
   },
 
   // Text Output
-  text: (node, children, parent, styles, inheritedStyles = {}) => (
-    <Text key={node.key} style={[inheritedStyles, styles.text]}>
-      {node.content}
-    </Text>
-  ),
+  text: (node, children, parent, styles, inheritedStyles = {}) => {
+    let isTable = false;
+    parent.forEach((element) => {
+      if (element.type == 'table') {
+        isTable = true;
+      }
+    });
+    if(isTable) {
+      return (
+        <View style={{width: ' 100%'}}>
+          <Text key={node.key} style={[inheritedStyles, styles.text]}>
+            {node.content}
+          </Text>
+        </View>
+      );
+    } else {
+      return (
+          <Text key={node.key} style={[inheritedStyles, styles.text]}>
+            {node.content}
+          </Text>
+      );
+    }
+   
+  },
   textgroup: (node, children, parent, styles) => (
     <Text key={node.key} style={styles.textgroup}>
       {children}
