@@ -94,6 +94,9 @@ export const styles = {
       ['ios']: {
         fontFamily: 'Courier',
       },
+      ['harmony']: {
+        fontFamily: 'Courier',
+      },
       ['android']: {
         fontFamily: 'monospace',
       },
@@ -109,6 +112,9 @@ export const styles = {
       ['ios']: {
         fontFamily: 'Courier',
       },
+      ['harmony']: {
+        fontFamily: 'Courier',
+      },
       ['android']: {
         fontFamily: 'monospace',
       },
@@ -122,6 +128,9 @@ export const styles = {
     borderRadius: 4,
     ...Platform.select({
       ['ios']: {
+        fontFamily: 'Courier',
+      },
+      ['harmony']: {
         fontFamily: 'Courier',
       },
       ['android']: {
