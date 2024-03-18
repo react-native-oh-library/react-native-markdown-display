@@ -309,7 +309,7 @@ const renderRules = {
     });
     if(isTable) {
       return (
-        <View style={{width: ' 100%'}}>
+        <View key={node.key}  style={{width: ' 100%'}}>
           <Text key={node.key} style={[inheritedStyles, styles.text]}>
             {node.content}
           </Text>
