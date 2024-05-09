@@ -245,12 +245,14 @@ const renderRules = {
 
   // Links
   link: (node, children, parent, styles, onLinkPress) => (
-    <Text
-      key={node.key}
-      style={styles.link}
-      onPress={() => openUrl(node.attributes.href, onLinkPress)}>
-      {children}
-    </Text>
+    <View key={node.key}>
+      <Text
+        key={node.key}
+        style={styles.link}
+        onPress={() => openUrl(node.attributes.href, onLinkPress)}>
+        {children}
+      </Text>
+    </View>
   ),
   blocklink: (node, children, parent, styles, onLinkPress) => (
     <TouchableWithoutFeedback
@@ -307,9 +309,9 @@ const renderRules = {
         isTable = true;
       }
     });
-    if(isTable) {
+    if (isTable) {
       return (
-        <View key={node.key}  style={{width: ' 100%'}}>
+        <View key={node.key} style={{width: ' 100%'}}>
           <Text key={node.key} style={[inheritedStyles, styles.text]}>
             {node.content}
           </Text>
@@ -317,12 +319,11 @@ const renderRules = {
       );
     } else {
       return (
-          <Text key={node.key} style={[inheritedStyles, styles.text]}>
-            {node.content}
-          </Text>
+        <Text key={node.key} style={[inheritedStyles, styles.text]}>
+          {node.content}
+        </Text>
       );
     }
-   
   },
   textgroup: (node, children, parent, styles) => (
     <Text key={node.key} style={styles.textgroup}>
